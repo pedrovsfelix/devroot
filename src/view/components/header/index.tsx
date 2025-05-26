@@ -6,7 +6,7 @@ import { navItems } from "./components/header";
 export function Header() {
 
   return (
-    <header className="absolute top-0 w-full z-10 h-22 bg-red-500">
+    <header className="absolute top-0 w-full z-10 h-22">
       <div className="flex items-center justify-between">
         <Link href="/">
           <Image

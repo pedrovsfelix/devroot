@@ -1,4 +1,6 @@
 import { cn } from "@/app/utils/cn";
+import { Button } from "@/view/components/button";
+import { ArrowRightIcon, ArrowTopRightIcon } from "@radix-ui/react-icons";
 import Image from "next/image";
 
 interface HeroSectionProps {
@@ -32,7 +34,11 @@ export function HeroSection({name, description, techs}: HeroSectionProps) {
             ))}
           </p>
           <div>
-            contato
+            <Button className="relative group">
+              <p className="mr-8">Contato</p>
+              <ArrowTopRightIcon className="ml-4 w-6 h-6 transition-opacity duration-1000 group-hover:opacity-0 absolute right-4" />
+              <ArrowRightIcon className="w-6 h-6 transition-opacity duration-500 opacity-0 group-hover:opacity-100 absolute right-4" />
+            </Button>
           </div>
         </div>
         <div className="w-1/2 flex items-center justify-center">
