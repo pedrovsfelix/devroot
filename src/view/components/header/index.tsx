@@ -6,8 +6,8 @@ import { navItems } from "./components/header";
 export function Header() {
 
   return (
-    <header className="absolute top-0 w-full z-10 h-22">
-      <div className="flex items-center justify-between">
+    <header className="absolute top-0 w-full z-10 h-24 flex items-center justify-center">
+      <div className="container flex items-center justify-between">
         <Link href="/">
           <Image
             width={180}
@@ -17,7 +17,7 @@ export function Header() {
             />
         </Link>
 
-        <nav className="flex items-center gap-4 sm:gap-5">
+        <nav className="flex items-center gap-4 sm:gap-10">
           {navItems.map(item => (
             <NavItems {...item} key={item.label} />
           ))}
